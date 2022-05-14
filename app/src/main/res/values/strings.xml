@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CryptoHash</string>
+
+    <!--Titles-->
+    <string name="title_card_1_hour">1 час</string>
+    <string name="title_card_1_day">1 день</string>
+    <string name="title_card_1_week">1 неделя</string>
+    <string name="title_card_1_month">1 месяц</string>
+
+
+    <!--Buttons-->
+    <string name="button_reload">Reload</string>
+    <string name="button_show_profit">Show profit</string>
+</resources>
