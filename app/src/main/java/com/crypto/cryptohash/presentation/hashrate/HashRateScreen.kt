@@ -85,7 +85,9 @@ private fun EnterRateBlock(viewModel: HashRateViewModel) {
         mutableStateOf(TextFieldValue(""))
     }
     Row(
-        modifier = Modifier.fillMaxWidth().height(80.dp),
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(80.dp),
         horizontalArrangement = Arrangement.spacedBy(16.dp),
         verticalAlignment = Alignment.Bottom
     ) {
@@ -95,12 +97,14 @@ private fun EnterRateBlock(viewModel: HashRateViewModel) {
             onValueChange = { rateValue ->
                 rate = rateValue
             },
-            label = { Text(text = "HashRate") },
-            placeholder = { Text(text = "Enter hashRate") },
+            label = { Text(text = stringResource(id = R.string.label_hash_rate)) },
+            placeholder = { Text(text = stringResource(id = R.string.placeholder_enter_hash_rate)) },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
         )
         Button(
-            modifier = Modifier.weight(1f).height(56.dp),
+            modifier = Modifier
+                .weight(1f)
+                .height(56.dp),
             onClick = {
                 val userHashRate = rate.text.toDoubleOrNull()
                 viewModel.sendEvent(HashRateEvent.UpdateHashRate(userHashRate))

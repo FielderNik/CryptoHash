@@ -7,8 +7,13 @@
     <string name="title_card_1_week">1 неделя</string>
     <string name="title_card_1_month">1 месяц</string>
 
+    <string name="label_hash_rate">HashRate</string>
+
+    <string name="placeholder_enter_hash_rate">Enter hashRate</string>
+
 
     <!--Buttons-->
     <string name="button_reload">Reload</string>
     <string name="button_show_profit">Show profit</string>
+
 </resources>
